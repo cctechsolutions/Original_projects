@@ -1,55 +1,11 @@
 # Unsupervised Machine Learning
 ## Developing clustering algorithms to segment customers by attributes and purchasing habits
 
-![cover_photo](./additional_files/images/priscilla-du-preez-YVssGmsSFhE-unsplash.jpg)
+<img src="./additional_files/images/priscilla-du-preez-YVssGmsSFhE-unsplash.jpg" width='700'>
 
 *Companies who understand their customers and their behavior have an advantage over their competitors.  These understandings help companies know what messages will resonate with them and how to attract and retain these customers.  Insights into customers and purchase behavior can also help companies know how to attract certain types of customers and increase certain types of purchase behavior.  As of 2022, e-commerce accounts for nearly 19% of all purchases, and this is expected to continue increasing over the next few years.  A grocery shopping chain wants to use these types of insights to increase online purchases from their customers.*
 
-## 1. Data    
-
-Data source:  “Customer personality analysis” dataset provided by provided by Dr. Omar Romero-Hernandez and uploaded to kaggle by Akash Patel 
-
-https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
-
-220.19 kB public domain csv file containing 29 variables and 2240 observations
-
-### Metadata     
-#### People    
-ID: Customer's unique identifier
-Year_Birth: Customer's birth year
-Education: Customer's education level
-Marital_Status: Customer's marital status
-Income: Customer's yearly household income
-Kidhome: Number of children in customer's household
-Teenhome: Number of teenagers in customer's household
-Dt_Customer: Date of customer's enrollment with the company
-Recency: Number of days since customer's last purchase
-Complain: 1 if the customer complained in the last 2 years, 0 otherwise
-     
-#### Products   
-MntWines: Amount spent on wine in last 2 years
-MntFruits: Amount spent on fruits in last 2 years
-MntMeatProducts: Amount spent on meat in last 2 years
-MntFishProducts: Amount spent on fish in last 2 years
-MntSweetProducts: Amount spent on sweets in last 2 years
-MntGoldProds: Amount spent on gold in last 2 years
-     
-#### Promotion    
-NumDealsPurchases: Number of purchases made with a discount
-AcceptedCmp1: 1 if customer accepted the offer in the 1st campaign, 0 otherwise
-AcceptedCmp2: 1 if customer accepted the offer in the 2nd campaign, 0 otherwise
-AcceptedCmp3: 1 if customer accepted the offer in the 3rd campaign, 0 otherwise
-AcceptedCmp4: 1 if customer accepted the offer in the 4th campaign, 0 otherwise
-AcceptedCmp5: 1 if customer accepted the offer in the 5th campaign, 0 otherwise
-Response: 1 if customer accepted the offer in the last campaign, 0 otherwise
-     
-#### Place    
-NumWebPurchases: Number of purchases made through the company’s website
-NumCatalogPurchases: Number of purchases made using a catalogue
-NumStorePurchases: Number of purchases made directly in stores
-NumWebVisitsMonth: Number of visits to company’s website in the last month
-
-## 2. Method
+# Method
 
 There are three main types of recommenders used in practice today:
 
@@ -61,15 +17,52 @@ There are three main types of recommenders used in practice today:
 
 ![](./6_README_files/matrix_example.png)
 
-
 **WINNER:User-based collaborative filtering system** 
-
 
 I choose to work with a user-based collaborative filtering system. This made the most sense because half of the 4 million user-entered climbs had an explicit rating of how many stars the user would rate the climb. Unfortunately, the data did not have very detailed "item features". Every rock climbing route had an area, a difficulty grade, and a style of climbing (roped or none). This would not have been enough data to provide an accurate content-based recommendation. In the future, I would love to experiment using a hybrid system to help solve the problem of the cold-start-threshold.
 
-## 3. Data Cleaning 
+# 1. Data   
 
-[Data Cleaning Report](https://drive.google.com/open?id=195wcooDtT2XhfpRXREWmLovm8XZPNymy)
+“Customer personality analysis” dataset created by Dr. Omar Romero-Hernandez and uploaded to kaggle by Akash Patel 
+
+https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
+
+## Metadata
+This is a 220.19 kB public domain csv file containing 2240 observations with the following 29 variables:
+### People
+ID: Customer's unique identifier    
+Year_Birth: Customer's birth year    
+Education: Customer's education level     
+Marital_Status: Customer's marital status    
+Income: Customer's yearly household income     
+Kidhome: Number of children in customer's household     
+Teenhome: Number of teenagers in customer's household     
+Dt_Customer: Date of customer's enrollment with the company    
+Recency: Number of days since customer's last purchase    
+Complain: 1 if the customer complained in the last 2 years, 0 otherwise     
+### Products
+MntWines: Amount spent on wine in last 2 years     
+MntFruits: Amount spent on fruits in last 2 years     
+MntMeatProducts: Amount spent on meat in last 2 years    
+MntFishProducts: Amount spent on fish in last 2 years    
+MntSweetProducts: Amount spent on sweets in last 2 years    
+MntGoldProds: Amount spent on gold in last 2 years    
+### Promotion
+NumDealsPurchases: Number of purchases made with a discount    
+AcceptedCmp1: 1 if customer accepted the offer in the 1st campaign, 0 otherwise    
+AcceptedCmp2: 1 if customer accepted the offer in the 2nd campaign, 0 otherwise    
+AcceptedCmp3: 1 if customer accepted the offer in the 3rd campaign, 0 otherwise     
+AcceptedCmp4: 1 if customer accepted the offer in the 4th campaign, 0 otherwise     
+AcceptedCmp5: 1 if customer accepted the offer in the 5th campaign, 0 otherwise    
+Response: 1 if customer accepted the offer in the last campaign, 0 otherwise       
+### Place
+NumWebPurchases: Number of purchases made through the company’s website     
+NumCatalogPurchases: Number of purchases made using a catalog    
+NumStorePurchases: Number of purchases made directly in stores     
+NumWebVisitsMonth: Number of visits to the company’s website in the last month      
+
+# 2. Data wrangling    
+[Data wrangling notebook](2_data_wrangling_3_eda.ipynb)
 
 In a collaborative-filtering system there are only three columns that matter to apply the machine learning algorithms: the user, the item, and the explicit rating (see the example matrix above). I also had to clean & normalize all the reference information (location, difficulty grade, etc.) to the route so that my user could get a useful and informative recommendation.
 
@@ -79,17 +72,21 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 * **Problem 3:** Spelling issues with the route name. For example: if there was a route named "red rocks canyon" it could be spelled "red rock", "red rocks", "red canyon" etc. **Solution:** at first, I was hopeful and tried two different phonetic spelling algorithms (soundex & double metahpone). However, both of these proved to be too aggressive in their grouping and sometimes would group together up to 20 different individual routes as the same item! My final solution was to create an accurate filter for route names. The logic being that if up to x number of users all entered that *exact same* route name, the chances were good that it was an actual route spelled correctly. I played around with 4 different filters and kept these until I could test their prediction accuracy in the ML portion. I found the greatest prediction accuracy came from the dataset that filtered out any routes listed less than 6 times.
 
-## 4. EDA
+# 3. Exploratory data analysis 
 
-[EDA Report](https://colab.research.google.com/drive/14AKVsyXy7yJSxBjmEBFyz7kEX7e9ioM_)
+[EDA notebook](2_data_wrangling_3_eda.ipynb)
 
 * The star-rating distributions all checked out to be normal. It is very common with explicit ratings to see a diminished number of low ratings.
 
 ![](./6_README_files/star_counts.png)
 
-## 5. Algorithms & Machine Learning
+# 4. Preprocessing and training
 
-[ML Notebook](https://colab.research.google.com/drive/1kAlvwwJnGcdCAJD8oFokT3gtJF2UnyZP)
+[Preprocessing notebook](4_preprocess_train_5_modeling.ipynb)
+
+# 5. Algorithms & Machine Learning
+
+[Modeling notebook](4_preprocess_train_5_modeling.ipynb)
 
 I chose to work with the Python [surprise library scikit](http://surpriselib.com/) for training my recommendation system. I tested all four different filtered datasets on the 11 different algorithms provided, and every time the Single Value Decomposition++ (SVD++) algorithm performed the best. It should be noted that this algorithm, although the most accurate is also the most computationally expensive, and that should be taken into account if this were to go into production.
 
@@ -103,7 +100,7 @@ This algorithm is an improved version of the SVD algorithm that Simon Funk popul
 
 ![](./6_README_files/forumla.png)
 
-## 6. Which Dataset to choose?
+# 6. Conclusions
 
 [More details about this process...](https://colab.research.google.com/drive/1kAlvwwJnGcdCAJD8oFokT3gtJF2UnyZP)
 
@@ -113,10 +110,9 @@ After choosing the SVD++ algorithm, I tested the accuracy of all four different 
 >* Notice the 3-star rating has a fat bulge at the top of the "violin" which indicates its predicting 3-star ratings for some of the true 3-star routes. This was not as prominent in the other dataframes
 >* The 1-star rating also has a fatter tail than the other datasets displayed
 
-
 ![](./6_README_files/accuracy.png)
 
-## 7. Coldstart Threshold
+# 7. Recommendations
 [More details about this process...](https://colab.research.google.com/drive/1kAlvwwJnGcdCAJD8oFokT3gtJF2UnyZP)
 
 **Coldstart Threshold**: There is a problem when only using collaborative based filtering: *what to recommend to new users with very little or no prior data?* Remember, we already set our cold start threshold for the routes by choosing the dataset that filtered out any route occurring less than 6 times. Now, let investigate where to put the threshold for users.
@@ -129,8 +125,7 @@ After choosing the SVD++ algorithm, I tested the accuracy of all four different 
 >* Increasing the user threshold to 13 would increase the RMSE by .0075 & would lose approximately 60% of the data
 >* If there were a larger increase in the RMSE (>= .01) I would trade my users' data for this improvement. However, these improvements are too minuscule to give up 40%-60% of my data to train on. Instead, I voted to keep some of these outliers to help the model train, and will focus on fine tuning my parameters using gridsearch to improve the RMSE
 
-
-## 7. Predictions
+## 7. Considerations and concerns
 
 [Final Predictions Notebook](https://colab.research.google.com/drive/1vLkoW_4SYessy_igmJxlVz_jEPlgJ06v)
 
@@ -138,7 +133,7 @@ In the final predictions notebook, the user can enter their user_id number and r
 
 ![](./6_README_files/predictions.png)
 
-## 8. Future Improvements
+## 8. Future research
 
 * In the future, I would love to spend more time creating a filtering system, wherein a climber could filter out the type, difficulty of climb, & country before receiving their top ten recommendation
 
@@ -148,4 +143,6 @@ In the final predictions notebook, the user can enter their user_id number and r
 
 ## 9. Credits
 
-Thanks to Nicolas Hug for his superb surprise library scikit, Colin Brochard for his stellar advice from his Mountain Project recommendation system, and DJ Sarkar for being an amazing Springboard mentor.
+Image by Priscilla Du Pree found on Unsplash.com.
+
+Special thanks to Silvia Seceleanu for her guidance and support and Springboard for curriculumn and project design.
