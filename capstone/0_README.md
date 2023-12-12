@@ -3,17 +3,51 @@
 
 ![cover_photo](./additional_files/images/priscilla-du-preez-YVssGmsSFhE-unsplash.jpg)
 
-*The sport of rock climbing has been steadily increasing in popularity. From 2012-2017, the IBISWorld estimates that from average annual growth for the indoor climbing wall industry was [3.9% in the USA](https://www.ibisworld.com/industry-trends/specialized-market-research-reports/consumer-goods-services/sports-recreation/indoor-climbing-walls.html).  In 2015, it ranked 17th out of 111 out of the most popular sports in the United States ( Physical Activity Council and PHIT America). Yet, even with this growth in popularity, most of the international rock climbing websites still lack a rock climbing recommendation system. In this project, I will create a recommendation system for the 8a.nu website that will help climbers identify some unique international climbing objectives.*
+*Companies who understand their customers and their behavior have an advantage over their competitors.  These understandings help companies know what messages will resonate with them and how to attract and retain these customers.  Insights into customers and purchase behavior can also help companies know how to attract certain types of customers and increase certain types of purchase behavior.  As of 2022, e-commerce accounts for nearly 19% of all purchases, and this is expected to continue increasing over the next few years.  A grocery shopping chain wants to use these types of insights to increase online purchases from their customers.*
 
-## 1. Data
+## 1. Data    
 
-8a.nu is one the world’s largest international rock climbing websites. With over 4 million entries of climbs and ratings, this Kaggle webscraping project is a sufficient size to develop a good predictor model. To view the 8a.nu website, the original Kaggle four SQLite tables created by David Cohen, or the import report using the Kaggle API click on the links below:
+Data source:  “Customer personality analysis” dataset provided by provided by Dr. Omar Romero-Hernandez and uploaded to kaggle by Akash Patel 
 
-> * [8a.nu website](https://www.8a.nu/)
+https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
 
-> * [Kaggle Dataset](https://www.kaggle.com/dcohen21/8anu-climbing-logbook)
+220.19 kB public domain csv file containing 29 variables and 2240 observations
 
-> * [Data Import Report](https://drive.google.com/open?id=1S4io5Nvz0lcnri_Lz9Mpa_TwLNeoSzGb)
+### Metadata     
+#### People    
+ID: Customer's unique identifier
+Year_Birth: Customer's birth year
+Education: Customer's education level
+Marital_Status: Customer's marital status
+Income: Customer's yearly household income
+Kidhome: Number of children in customer's household
+Teenhome: Number of teenagers in customer's household
+Dt_Customer: Date of customer's enrollment with the company
+Recency: Number of days since customer's last purchase
+Complain: 1 if the customer complained in the last 2 years, 0 otherwise
+     
+#### Products   
+MntWines: Amount spent on wine in last 2 years
+MntFruits: Amount spent on fruits in last 2 years
+MntMeatProducts: Amount spent on meat in last 2 years
+MntFishProducts: Amount spent on fish in last 2 years
+MntSweetProducts: Amount spent on sweets in last 2 years
+MntGoldProds: Amount spent on gold in last 2 years
+     
+#### Promotion    
+NumDealsPurchases: Number of purchases made with a discount
+AcceptedCmp1: 1 if customer accepted the offer in the 1st campaign, 0 otherwise
+AcceptedCmp2: 1 if customer accepted the offer in the 2nd campaign, 0 otherwise
+AcceptedCmp3: 1 if customer accepted the offer in the 3rd campaign, 0 otherwise
+AcceptedCmp4: 1 if customer accepted the offer in the 4th campaign, 0 otherwise
+AcceptedCmp5: 1 if customer accepted the offer in the 5th campaign, 0 otherwise
+Response: 1 if customer accepted the offer in the last campaign, 0 otherwise
+     
+#### Place    
+NumWebPurchases: Number of purchases made through the company’s website
+NumCatalogPurchases: Number of purchases made using a catalogue
+NumStorePurchases: Number of purchases made directly in stores
+NumWebVisitsMonth: Number of visits to company’s website in the last month
 
 ## 2. Method
 
