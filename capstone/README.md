@@ -3,23 +3,24 @@
 
 <img src="./additional_files/images/priscilla-du-preez-YVssGmsSFhE-unsplash.jpg" width='700'>
 
-*Companies who understand their customers and their behavior have an advantage over their competitors.  These understandings help companies know what messages will resonate with them and how to attract and retain these customers.  Insights into customers and purchase behavior can also help companies know how to attract certain types of customers and increase certain types of purchase behavior.  As of 2022, e-commerce accounts for nearly 19% of all purchases, and this is expected to continue increasing over the next few years.  A grocery shopping chain wants to use these types of insights to increase online purchases from their customers.*
+*Companies who understand their customers and their behavior have an advantage over their competitors.  These understandings help companies know what messages will resonate with them and how to attract and retain these customers.  Insights into customers and purchase behavior can also help companies know how to attract certain types of customers and increase certain types of purchase behavior.  As of 2022, e-commerce accounts for nearly 19% of all purchases, and this is expected to continue increasing over the next few years.  Our client, a grocery store chain, wants to use these types of insights to increase online purchases from their customers.*
 
 # Method
 
-There are three main types of recommenders used in practice today:
+1. **Project proposal:**  Suggested plan to investigate data, create a machine learning algorithm, and use this algorithm for modeling to discover useful insights, group customers, and advise our client on future business decisions
 
-1. **Content-based filter:** Recommending future items to the user that have similar innate features with previously "liked" items. Basically, content-based relies on similarities between features of the items & needs good item profiles to function properly.
+2. **Data wrangling:**  Found, imported, cleaned, and transformed data to prepare it for further analysis
 
-2. **Collaborative-based filter:** Recommending products based on a similar user that has already rated the product. Collaborative filtering relies on information from similar users, and it is important to have a large explicit user rating  base (doesn't work well for new customer bases).
+3. **Exploratory data analysis:**  Examined the dataset to find patterns and insights and created useful graphics for visualizing this data
 
-3. **Hybrid Method:** Leverages both content & collaborative based filtering. Typically, when a new user comes into the recommender, the content-based recommendation takes place. Then after interacting with the items a couple of times, the collaborative/ user based recommendation system will be utilized.
+4. **Develop machine learning algorithms:**  Created, evaluated, compared, fine-tuned, and improved models to determine which was most useful for our purposes
 
-![](./6_README_files/matrix_example.png)
+5. **Modeling:**  Used the chosen model to cluster our customers
+   
+6. **Conclusions and recommendations:**  Examine the resulting clusters to make any possible conclusions and give recommendations to the business
 
-**WINNER:User-based collaborative filtering system** 
-
-I choose to work with a user-based collaborative filtering system. This made the most sense because half of the 4 million user-entered climbs had an explicit rating of how many stars the user would rate the climb. Unfortunately, the data did not have very detailed "item features". Every rock climbing route had an area, a difficulty grade, and a style of climbing (roped or none). This would not have been enough data to provide an accurate content-based recommendation. In the future, I would love to experiment using a hybrid system to help solve the problem of the cold-start-threshold.
+***KMeans clustering*** 
+The algorithm that performed best and created the most useful clusters of customers was a KMeans clustering algorithm.  These clusters are created by examining the distance between each data point, which represents individual customers, and grouping those points that are the closest to each other into one algorithm and those that are farthest into different clusters.  Closeness is distance represents customers that have the most similarities in the attributes contained in this data, while points that are farther away show less similarity between customers.  When a clustering model performs well with the data it's given, the model results in clusters that are dense and distinct.  This is the case for the model we developed in this project.
 
 # 1. Data   
 
