@@ -1,5 +1,5 @@
 # Unsupervised Machine Learning
-## Clustering customers by attributes and purchasing habits
+## Developing clustering algorithms to segment customers by attributes and purchasing habits
 
 ![cover_photo](./additional_files/images/priscilla-du-preez-YVssGmsSFhE-unsplash.jpg)
 
