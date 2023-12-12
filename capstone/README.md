@@ -19,7 +19,8 @@
    
 6. **Conclusions and recommendations:**  Examine the resulting clusters to make any possible conclusions and give recommendations to the business
 
-***KMeans clustering***        
+***KMeans clustering*** 
+     
 The algorithm that performed best and created the most useful clusters of customers was a KMeans clustering algorithm.  These clusters are created by examining the distance between each data point, which represents individual customers, and grouping those points that are the closest to each other into one algorithm and those that are farthest into different clusters.  Closeness is distance represents customers that have the most similarities in the attributes contained in this data, while points that are farther away show less similarity between customers.  When a clustering model performs well with the data it's given, the model results in clusters that are dense and distinct.  This is the case for the model we developed in this project.
 
 # 1. Data   
