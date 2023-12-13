@@ -32,7 +32,7 @@ The algorithm that performed best and created the most useful clusters of custom
 
 ### About the dataset:
 This is a 220.19 kB public domain csv file containing 2240 observations with the following 29 variables:
-### People
+#### Demographics
 * ID: Customer's unique identifier    
 * Year_Birth: Customer's birth year    
 * Education: Customer's education level     
@@ -43,14 +43,14 @@ This is a 220.19 kB public domain csv file containing 2240 observations with the
 * Dt_Customer: Date of customer's enrollment with the company    
 * Recency: Number of days since customer's last purchase    
 * Complain: 1 if the customer complained in the last 2 years, 0 otherwise     
-### Products
+#### Purchases
 * MntWines: Amount spent on wine in last 2 years     
 * MntFruits: Amount spent on fruits in last 2 years     
 * MntMeatProducts: Amount spent on meat in last 2 years    
 * MntFishProducts: Amount spent on fish in last 2 years    
 * MntSweetProducts: Amount spent on sweets in last 2 years    
 * MntGoldProds: Amount spent on gold in last 2 years    
-### Promotion
+#### Discounts
 * NumDealsPurchases: Number of purchases made with a discount    
 * AcceptedCmp1: 1 if customer accepted the offer in the 1st campaign, 0 otherwise    
 * AcceptedCmp2: 1 if customer accepted the offer in the 2nd campaign, 0 otherwise    
@@ -58,7 +58,7 @@ This is a 220.19 kB public domain csv file containing 2240 observations with the
 * AcceptedCmp4: 1 if customer accepted the offer in the 4th campaign, 0 otherwise     
 * AcceptedCmp5: 1 if customer accepted the offer in the 5th campaign, 0 otherwise    
 * Response: 1 if customer accepted the offer in the last campaign, 0 otherwise       
-### Place
+#### Shopping habits
 * NumWebPurchases: Number of purchases made through the company’s website     
 * NumCatalogPurchases: Number of purchases made using a catalog    
 * NumStorePurchases: Number of purchases made directly in stores     
@@ -71,9 +71,9 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 * **Problem 1:** Missing values:  24 of the 2240 rows contained a missing value for the column income.  Before changing or removing these observations, I wanted to be sure that there are not any trends among these values that might affect our analysis.  I compared the rows that had a missing value with the averages of all other rows for each variable.  There was not a significant difference between other rows and those with missing values.  **Solution:** I imputed the missing income values with the mean value for income across the dataset.
 
-* **Problem 2:** Some values given for categorical variables were in a different format than others.  Some appeared to be added as a joke, such as the values "Absurd" and "YOLO" in the column for relationship status.  **Solution:** For the education variable, I looked for information to learn which of the unknown labels were most equivalent to the education system in the US, as that is what I am most familiar with.  I then replaced the terms, "Basic," "2n cycle," with "High School" and "Masters" so that the format was the same across all observations.  I dropped the rows with "Absurd" and "YOLO" for relationship status as I had no way to determine what the true response should have been, nor was there any average value for that feature that I might use to impute them.
+* **Problem 2:** Some values given for categorical variables were in a different format than others.  Some appeared to be added as a joke, such as the values "Absurd" and "YOLO" in the column for relationship status.  **Solution:** For the education variable, I looked for information to learn which of the unknown labels were most equivalent to the education system in the US, as that is what I am most familiar with.  I then replaced the terms, "Basic," "2n cycle," with "High School" and "Master's" so that the format was the same across all observations.  I dropped the rows with "Absurd" and "YOLO" for relationship status as I had no way to determine what the true response should have been, nor was there any average value for that feature that I might use to impute them.
 
-* **Problem 3:** There were more features than we would use for our analysis. **Solution:** While I did drop columns such as customer ID number, for many of the rather than simply dropping rows that we were not going to use, I instead combined rows
+* **Problem 3:** There were more features than we would use for our analysis.  Machine learning algorithms can manage extremely large datasets with many dimensions, but each dimension adds complexity and can increase the time required to train and test models.   **Solution:** While I did drop unnecessary columns such as customer ID number, I wanted to maintain as many features as were possibly useful.  Therefore, I combined features such as "Kidhome" and "Teenhome" into a single feature for customers who had a child or children at home.  
 
 # 3. Exploratory data analysis 
 
