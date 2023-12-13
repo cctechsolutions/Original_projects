@@ -81,13 +81,14 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 <p align="center">Customers' education and marital status before cleaning (bar graph on left) and after cleaning (pie chart on right) category labels</p>
 
-<img src="./additional_files/images/download_15.png" width='500'>  <img src="./additional_files/images/download_16.png" width='500'>   
-     
+<img src="./additional_files/images/download_15.png" width='450'>  <img src="./additional_files/images/download_16.png" width='550'>   
+
+<p align="center">Visualizing the correlation between every combination of variables</p>     
+
 <p align="center">
   <img src="./additional_files/images/download_17.png" / width='500>
 </p>     
      
-<p align="center">Visualizing the correlation between every combination of variables</p>     
 
 
 # 4. Preprocessing and training
