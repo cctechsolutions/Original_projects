@@ -88,6 +88,7 @@ In a collaborative-filtering system there are only three columns that matter to 
             
 # 4. Preprocessing and training      
 [Preprocessing notebook](4_preprocess_train_5_modeling.ipynb)     
+     
 I created a basic pipeline that will impute any missing values and scale the data.  This pipeline can then be used to train various models with the data it has prepared.  I tried various models, first with default hyperparameters, and then fine-tuned hyperparameters for each algorithm.  I evaluated each model using silhouette score to compare the performance of each.
       
 # 5. Algorithms & Machine Learning     
@@ -119,7 +120,7 @@ After choosing the SVD++ algorithm, I tested the accuracy of all four different 
 >* Increasing the user threshold to 13 would increase the RMSE by .0075 & would lose approximately 60% of the data
 >* If there were a larger increase in the RMSE (>= .01) I would trade my users' data for this improvement. However, these improvements are too minuscule to give up 40%-60% of my data to train on. Instead, I voted to keep some of these outliers to help the model train, and will focus on fine tuning my parameters using gridsearch to improve the RMSE
 
-## Credits
+# Credits
 
 Special thanks to Silvia Seceleanu for her guidance and support.  Credit to Springboard for curriculum and project design.  Cover image by Priscilla Du Pree found on Unsplash.com.
 
