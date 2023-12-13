@@ -79,6 +79,7 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 [EDA notebook](2_data_wrangling_3_eda.ipynb)
 
+<img "additional_files/images/download(15)" >
 * The star-rating distributions all checked out to be normal. It is very common with explicit ratings to see a diminished number of low ratings.
 
 ![](./6_README_files/star_counts.png)
