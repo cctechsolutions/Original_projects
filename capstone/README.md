@@ -79,15 +79,16 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 [EDA notebook](2_data_wrangling_3_eda.ipynb)
 
-<img src="./additional_files/images/download_15.png" width='500'>  <img src="./additional_files/images/download_16.png" width='500'>   
+<p align="center">Customers' education and marital status before cleaning (bar graph on left) and after cleaning (pie chart on right) category labels</p>
 
-<p align="center">Customers' education and marital status before and after cleaning category labels</p>
+<img src="./additional_files/images/download_15.png" width='500'>  <img src="./additional_files/images/download_16.png" width='500'>   
      
 <p align="center">
   <img src="./additional_files/images/download_17.png" / width='500>
 </p>     
      
-<p align="center">Visualizing the correlation between every combination of variables</p>
+<p align="center">Visualizing the correlation between every combination of variables</p>     
+
 
 # 4. Preprocessing and training
 
@@ -115,9 +116,7 @@ This algorithm is an improved version of the SVD algorithm that Simon Funk popul
 
 After choosing the SVD++ algorithm, I tested the accuracy of all four different filtered datasets. The dataset which filtered out any route names occurring less than 6 times performed the most accurate predictions. Thus, it was chosen to be the dataset I trained on.
 
->* All of the dataframes displayed discrepancies with the 1 star ratings(This is to be expected due to the inherent skewed positive ratings). Also, the one star ratings are not imperative to this project's goal. It is more important that the 1 star ratings are different enough to be filtered out of the top ten routes recommended to users. 
->* Notice the 3-star rating has a fat bulge at the top of the "violin" which indicates its predicting 3-star ratings for some of the true 3-star routes. This was not as prominent in the other dataframes
->* The 1-star rating also has a fatter tail than the other datasets displayed
+
 
 ![](./6_README_files/accuracy.png)
 
