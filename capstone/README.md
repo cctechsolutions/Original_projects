@@ -80,7 +80,9 @@ In a collaborative-filtering system there are only three columns that matter to 
 [EDA notebook](2_data_wrangling_3_eda.ipynb)
 
 <img src="./additional_files/images/download_15.png" width='500'>  <img src="./additional_files/images/download_16.png" width='500'>
-<center> <img src="./additional_files/images/download_17.png" width='500'>
+<p align="center">
+  <img src="./additional_files/images/download_17.png" width='500' />
+</p>
 
 * The star-rating distributions all checked out to be normal. It is very common with explicit ratings to see a diminished number of low ratings.
 
