@@ -94,31 +94,9 @@ I created a basic pipeline that will impute any missing values and scale the dat
 # 5. Algorithms & Machine Learning     
 [Modeling notebook](4_preprocess_train_5_modeling.ipynb)     
 
-I chose to work with the Python [surprise library scikit](http://surpriselib.com/) for training my recommendation system. I tested all four different filtered datasets on the 11 different algorithms provided, and every time the Single Value Decomposition++ (SVD++) algorithm performed the best. It should be noted that this algorithm, although the most accurate is also the most computationally expensive, and that should be taken into account if this were to go into production.
-
-![](./6_README_files/algo.png)
-
->***NOTE:** I choose RMSE as the accuracy metric over mean absolute error(MAE) because the errors are squared before they are averaged which gives the RMSE a higher weight to large errors. Thus, the RMSE is useful when large errors are undesirable. The smaller the RMSE, the more accurate the prediction because the RMSE takes the square root of the residual errors of the line of best fit.*
-
-**WINNER: SVD++ Algorithm**
-
-This algorithm is an improved version of the SVD algorithm that Simon Funk popularized in the million dollar Netflix competition that also takes into account implicit ratings (*yj*). Using stochastic gradient descent (SGD), parameters are learned using the regularized squared error objective.
-
-![](./6_README_files/forumla.png)
-
 # 6. Conclusions
 
-After choosing the SVD++ algorithm, I tested the accuracy of all four different filtered datasets. The dataset which filtered out any route names occurring less than 6 times performed the most accurate predictions. Thus, it was chosen to be the dataset I trained on.
-
 # 7. Recommendations
-
-**Coldstart Threshold**: There is a problem when only using collaborative based filtering: *what to recommend to new users with very little or no prior data?* Remember, we already set our cold start threshold for the routes by choosing the dataset that filtered out any route occurring less than 6 times. Now, let investigate where to put the threshold for users.
-
-*It is my hypothesis that the initial filtering of the routes is what affected the RMSE of the users* 
-
->* Increasing the user threshold to 5 would increase the RMSE by .005 & would lose approximately 40% of the data.
->* Increasing the user threshold to 13 would increase the RMSE by .0075 & would lose approximately 60% of the data
->* If there were a larger increase in the RMSE (>= .01) I would trade my users' data for this improvement. However, these improvements are too minuscule to give up 40%-60% of my data to train on. Instead, I voted to keep some of these outliers to help the model train, and will focus on fine tuning my parameters using gridsearch to improve the RMSE
 
 # Credits
 
