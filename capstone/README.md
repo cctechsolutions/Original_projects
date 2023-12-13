@@ -149,8 +149,6 @@ In the final predictions notebook, the user can enter their user_id number and r
 
 ## 9. Credits
 
-Image by Priscilla Du Pree found on Unsplash.com.
-
-Special thanks to Silvia Seceleanu for her guidance and support and Springboard for curriculumn and project design.
+Special thanks to Silvia Seceleanu for her guidance and support.  Credit to Springboard for curriculum and project design.  Cover image by Priscilla Du Pree found on Unsplash.com.
 
 [^1]:  Daniela Coppola, publisher.  “E-commerce as percentage of total retail sales worldwide from 2015 to 2027.”  www.statista.com/statistics/534123/e-commerce-share-of-retail-sales-worldwide/#statisticContainer .  Published Aug 29, 2023.  Accessed Sept 18, 2023.
