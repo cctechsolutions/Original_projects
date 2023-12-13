@@ -76,7 +76,7 @@ In a collaborative-filtering system there are only three columns that matter to 
 * **Problem 3:** There were more features than we would use for our analysis.  Machine learning algorithms can manage extremely large datasets with many dimensions, but each dimension adds complexity and can increase the time required to train and test models.   **Solution:** While I did drop unnecessary columns such as customer ID number, I wanted to maintain as many features as were possibly useful.  Therefore, I combined features such as "Kidhome" and "Teenhome" into a single feature for customers who had a child or children at home.  
 
 # 3. Exploratory data analysis 
-[EDA notebook](2_data_wrangling_3_eda.ipynb)
+[EDA notebook](2_data_wrangling_3_eda.ipynb)     
 
 <p align="center">Customers' education and marital status before cleaning (bar graph on left) and after cleaning (pie chart on right) category labels</p>
 
@@ -86,12 +86,12 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 <p align="center"><img src="./additional_files/images/download_17.png" width='500'>     
             
-# 4. Preprocessing and training
-[Preprocessing notebook](4_preprocess_train_5_modeling.ipynb)
+# 4. Preprocessing and training      
+[Preprocessing notebook](4_preprocess_train_5_modeling.ipynb)     
 I created a basic pipeline that will impute any missing values and scale the data.  This pipeline can then be used to train various models with the data it has prepared.  I tried various models, first with default hyperparameters, and then fine-tuned hyperparameters for each algorithm.  I evaluated each model using silhouette score to compare the performance of each.
       
-# 5. Algorithms & Machine Learning
-[Modeling notebook](4_preprocess_train_5_modeling.ipynb)
+# 5. Algorithms & Machine Learning     
+[Modeling notebook](4_preprocess_train_5_modeling.ipynb)     
 
 I chose to work with the Python [surprise library scikit](http://surpriselib.com/) for training my recommendation system. I tested all four different filtered datasets on the 11 different algorithms provided, and every time the Single Value Decomposition++ (SVD++) algorithm performed the best. It should be noted that this algorithm, although the most accurate is also the most computationally expensive, and that should be taken into account if this were to go into production.
 
