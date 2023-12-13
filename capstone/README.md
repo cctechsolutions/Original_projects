@@ -84,7 +84,7 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 <p align="center">Visualizing the correlation between each combination of variables in the cleaned dataset</p>     
 
-<p align="center"><img src="./additional_files/images/download_17.png" width='500></p>      
+<p align="center"><img src="./additional_files/images/download_17.png" width='500'>     
             
 # 4. Preprocessing and training
 [Preprocessing notebook](4_preprocess_train_5_modeling.ipynb)
