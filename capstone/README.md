@@ -86,11 +86,11 @@ In a collaborative-filtering system there are only three columns that matter to 
 <p align="center">Visualizing the correlation between each combination of variables in the cleaned dataset</p>     
 
 <p align="center"><img src="./additional_files/images/download_17.png" / width='500></p>     
-
             
 # 4. Preprocessing and training
 
 [Preprocessing notebook](4_preprocess_train_5_modeling.ipynb)
+I created a basic pipeline that will impute any missing values and scale the data.  This pipeline can then be used to train various models with the data it has prepared.  I tried various models, first with default hyperparameters, and then fine-tuned hyperparameters for each algorithm.  I evaluated each model using silhouette score to compare the performance of each.
 
 # 5. Algorithms & Machine Learning
 
