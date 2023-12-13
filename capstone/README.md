@@ -3,7 +3,7 @@
 
 <img src="./additional_files/images/priscilla-du-preez-YVssGmsSFhE-unsplash.jpg" width='700'>
 
-*Companies who understand their customers and their behavior have an advantage over their competitors.  These understandings help companies know what messages will resonate with them and how to attract and retain these customers.  Insights into customers and purchase behavior can also help companies know how to attract certain types of customers and increase certain types of purchase behavior.  As of 2022, e-commerce accounts for nearly 19% of all purchases, and this is expected to continue increasing over the next few years.  Our client, a grocery store chain, wants to use these types of insights to increase online purchases from their customers.*
+*Companies who understand their customers and their behavior have an advantage over their competitors.  These understandings help companies know what messages will resonate with them and how to attract and retain these customers.  Insights into customers and purchase behavior can also help companies know how to attract certain types of customers and increase certain types of purchase behavior.  As of 2022, e-commerce accounts for nearly 19% of all purchases, and this is expected to continue increasing over the next few years.[^1]  Our client, a grocery store chain, wants to use these types of insights to increase online purchases from their customers.*
 
 # Method
 
@@ -148,3 +148,5 @@ In the final predictions notebook, the user can enter their user_id number and r
 Image by Priscilla Du Pree found on Unsplash.com.
 
 Special thanks to Silvia Seceleanu for her guidance and support and Springboard for curriculumn and project design.
+
+[^1]:  Daniela Coppola, publisher.  “E-commerce as percentage of total retail sales worldwide from 2015 to 2027.”  www.statista.com/statistics/534123/e-commerce-share-of-retail-sales-worldwide/#statisticContainer .  Published Aug 29, 2023.  Accessed Sept 18, 2023.
