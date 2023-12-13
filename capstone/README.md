@@ -81,14 +81,13 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 <img src="./additional_files/images/download_15.png" width='500'>  <img src="./additional_files/images/download_16.png" width='500'>   
 
-<center>Customers' education and marital status before and after cleaning category labels</center>
+<p align="center">Customers' education and marital status before and after cleaning category labels</p>
      
-#### Customers' education and marital status before and after cleaning category labels     
 <p align="center">
   <img src="./additional_files/images/download_17.png" / width='500>
 </p>     
      
-#### Visualizing the correlation between all variables
+<p align="center">Visualizing the correlation between every combination of variables</p>
 
 # 4. Preprocessing and training
 
