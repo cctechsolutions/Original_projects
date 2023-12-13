@@ -76,7 +76,6 @@ In a collaborative-filtering system there are only three columns that matter to 
 * **Problem 3:** There were more features than we would use for our analysis.  Machine learning algorithms can manage extremely large datasets with many dimensions, but each dimension adds complexity and can increase the time required to train and test models.   **Solution:** While I did drop unnecessary columns such as customer ID number, I wanted to maintain as many features as were possibly useful.  Therefore, I combined features such as "Kidhome" and "Teenhome" into a single feature for customers who had a child or children at home.  
 
 # 3. Exploratory data analysis 
-
 [EDA notebook](2_data_wrangling_3_eda.ipynb)
 
 <p align="center">Customers' education and marital status before cleaning (bar graph on left) and after cleaning (pie chart on right) category labels</p>
@@ -85,15 +84,13 @@ In a collaborative-filtering system there are only three columns that matter to 
 
 <p align="center">Visualizing the correlation between each combination of variables in the cleaned dataset</p>     
 
-<p align="center"><img src="./additional_files/images/download_17.png" width='500></p>     
+<p align="center"><img src="./additional_files/images/download_17.png" width='500></p>      
             
 # 4. Preprocessing and training
-
 [Preprocessing notebook](4_preprocess_train_5_modeling.ipynb)
 I created a basic pipeline that will impute any missing values and scale the data.  This pipeline can then be used to train various models with the data it has prepared.  I tried various models, first with default hyperparameters, and then fine-tuned hyperparameters for each algorithm.  I evaluated each model using silhouette score to compare the performance of each.
-
+      
 # 5. Algorithms & Machine Learning
-
 [Modeling notebook](4_preprocess_train_5_modeling.ipynb)
 
 I chose to work with the Python [surprise library scikit](http://surpriselib.com/) for training my recommendation system. I tested all four different filtered datasets on the 11 different algorithms provided, and every time the Single Value Decomposition++ (SVD++) algorithm performed the best. It should be noted that this algorithm, although the most accurate is also the most computationally expensive, and that should be taken into account if this were to go into production.
@@ -110,20 +107,11 @@ This algorithm is an improved version of the SVD algorithm that Simon Funk popul
 
 # 6. Conclusions
 
-[More details about this process...](https://colab.research.google.com/drive/1kAlvwwJnGcdCAJD8oFokT3gtJF2UnyZP)
-
 After choosing the SVD++ algorithm, I tested the accuracy of all four different filtered datasets. The dataset which filtered out any route names occurring less than 6 times performed the most accurate predictions. Thus, it was chosen to be the dataset I trained on.
 
-
-
-![](./6_README_files/accuracy.png)
-
 # 7. Recommendations
-[More details about this process...](https://colab.research.google.com/drive/1kAlvwwJnGcdCAJD8oFokT3gtJF2UnyZP)
 
 **Coldstart Threshold**: There is a problem when only using collaborative based filtering: *what to recommend to new users with very little or no prior data?* Remember, we already set our cold start threshold for the routes by choosing the dataset that filtered out any route occurring less than 6 times. Now, let investigate where to put the threshold for users.
-
-![](./6_README_files/20user_thresh.png)
 
 *It is my hypothesis that the initial filtering of the routes is what affected the RMSE of the users* 
 
@@ -131,23 +119,7 @@ After choosing the SVD++ algorithm, I tested the accuracy of all four different 
 >* Increasing the user threshold to 13 would increase the RMSE by .0075 & would lose approximately 60% of the data
 >* If there were a larger increase in the RMSE (>= .01) I would trade my users' data for this improvement. However, these improvements are too minuscule to give up 40%-60% of my data to train on. Instead, I voted to keep some of these outliers to help the model train, and will focus on fine tuning my parameters using gridsearch to improve the RMSE
 
-## 7. Considerations and concerns
-
-[Final Predictions Notebook](https://colab.research.google.com/drive/1vLkoW_4SYessy_igmJxlVz_jEPlgJ06v)
-
-In the final predictions notebook, the user can enter their user_id number and receive a list of top ten routes recommended to them:
-
-![](./6_README_files/predictions.png)
-
-## 8. Future research
-
-* In the future, I would love to spend more time creating a filtering system, wherein a climber could filter out the type, difficulty of climb, & country before receiving their top ten recommendation
-
-* This recommendation system could also be improved by connecting to the 8a.nu website so that the user could input their actual online ID instead of just their user_id number 
-
-* Due to RAM constraints on google colab, I had to train a 65% sample of the original 6x dataset. Without resource limitations, I would love to train on the full dataset. Preliminary tests showed that the bigger the training size, the lower the RMSE. One test showed an increase in sample size could increase the RMSE by .03 (in contrast to the .005 improvement I received when increasing the coldstart threshold)
-
-## 9. Credits
+## Credits
 
 Special thanks to Silvia Seceleanu for her guidance and support.  Credit to Springboard for curriculum and project design.  Cover image by Priscilla Du Pree found on Unsplash.com.
 
