@@ -80,6 +80,8 @@ In a collaborative-filtering system there are only three columns that matter to 
 [EDA notebook](2_data_wrangling_3_eda.ipynb)
 
 <img src="./additional_files/images/download_15.png" width='500'>  <img src="./additional_files/images/download_16.png" width='500'>   
+
+<center>Customers' education and marital status before and after cleaning category labels</center>
      
 #### Customers' education and marital status before and after cleaning category labels     
 <p align="center">
