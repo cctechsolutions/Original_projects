@@ -80,11 +80,11 @@ In a collaborative-filtering system there are only three columns that matter to 
 [EDA notebook](2_data_wrangling_3_eda.ipynb)
 
 <img src="./additional_files/images/download_15.png" width='500'>  <img src="./additional_files/images/download_16.png" width='500'>     
-Customers' education and marital status before and after cleaning category labels     
+* Customers' education and marital status before and after cleaning category labels     
 <p align="center">
   <img src="./additional_files/images/download_17.png" / width='500>
-</p>
-Visualizing the correlation between all variables
+</p>     
+* Visualizing the correlation between all variables
 
 # 4. Preprocessing and training
 
