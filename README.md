@@ -33,3 +33,5 @@ A selection of my original data science and analytics projects
 ### Classification
 
 ## Unsupervised machine learning
+     
+[K Means Clustering](./capstone/clustering/4_preprocess_train_5_modeling (1).ipynb)
