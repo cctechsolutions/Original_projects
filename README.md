@@ -24,7 +24,7 @@ A selection of my original data science and analytics projects
      
 [Educational and book ban analysis](./literacy_project/pt_2-cleaning_and_pt_3-eda.ipynb)   
      
-[Customer and purchasing insights](./capstone/clustering/2_data_wrangling_3_eda.ipynb)
+[Customers' purchasing trends](./capstone/clustering/2_data_wrangling_3_eda.ipynb)
 
 ## Supervised machine learning 
 
