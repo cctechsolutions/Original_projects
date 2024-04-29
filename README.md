@@ -14,7 +14,7 @@ A selection of my original data science and analytics projects
 ## Data wrangling examples
 [Business data](./revenue_analysis/02_data_wrangling.ipynb)    
      
-[Educational datasets](./literacy_project/02_data_wrangling.ipynb)   
+[Educational datasets](./literacy_project/pt_2-cleaning_and_pt_3-eda.ipynb)   
      
 [Customer data](./capstone/clustering/02_data_wrangling.ipynb)
      
