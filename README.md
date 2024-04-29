@@ -2,11 +2,11 @@
 A selection of my original data science and analytics projects
 
 ## Complete data science projects 
-[Customer segmentation:  KMeans clustering](./capstone)   
+[Customer segmentation](./capstone) KMeans clustering  
        
 [Literacy and book bans:  Logistic regression classification](./literacy_project)
 
-[Revenue optimization:  Business analysis, predictive modeling, and random forest](./revenue_analysis)
+[Revenue optimization:  Business analysis, predictive modeling, and random forest regresion](./revenue_analysis)
 
 ## Data wrangling
 
