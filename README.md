@@ -16,7 +16,7 @@ A selection of my original data science and analytics projects
      
 [Educational datasets](./literacy_project/pt_2-cleaning_and_pt_3-eda.ipynb)   
      
-[Customer data](./capstone/clustering/02_data_wrangling.ipynb)
+[Customer data](./capstone/clustering/2_data_wrangling_3_eda.ipynb)
      
 ## Exploratory data analysis
 
