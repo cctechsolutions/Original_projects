@@ -91,13 +91,11 @@ In a collaborative-filtering system there are only three columns that matter to 
      
 I created a basic pipeline that will impute any missing values and scale the data.  This pipeline can then be used to train various models with the data it has prepared.  I tried various models, first with default hyperparameters, and then fine-tuned hyperparameters for each algorithm.  I evaluated each model using silhouette score to compare the performance of each.
       
-# 5. Algorithms & Machine Learning     
+# 5. Algorithms and Machine Learning     
 [Modeling notebook](clustering/4_preprocess_train_5_modeling.ipynb)     
 
 # 6. Conclusions and recommendations
 [Presentation](clustering/6_presentation.pdf)
-
-# 7. Recommendations
 
 # Credits
 
