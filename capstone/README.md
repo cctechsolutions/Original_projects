@@ -65,7 +65,7 @@ This is a 220.19 kB public domain csv file containing 2240 observations with the
 * NumWebVisitsMonth: Number of visits to the company’s website in the last month      
 
 # 2. Data wrangling    
-[Data wrangling notebook](2_data_wrangling_3_eda.ipynb)
+[Data wrangling notebook](clustering/2_data_wrangling_3_eda.ipynb)
 
 In a collaborative-filtering system there are only three columns that matter to apply the machine learning algorithms: the user, the item, and the explicit rating (see the example matrix above). I also had to clean & normalize all the reference information (location, difficulty grade, etc.) to the route so that my user could get a useful and informative recommendation.
 
@@ -76,7 +76,7 @@ In a collaborative-filtering system there are only three columns that matter to 
 * **Problem 3:** There were more features than we would use for our analysis.  Machine learning algorithms can manage extremely large datasets with many dimensions, but each dimension adds complexity and can increase the time required to train and test models.   **Solution:** While I did drop unnecessary columns such as customer ID number, I wanted to maintain as many features as were possibly useful.  Therefore, I combined features such as "Kidhome" and "Teenhome" into a single feature for customers who had a child or children at home.  
 
 # 3. Exploratory data analysis 
-[EDA notebook](2_data_wrangling_3_eda.ipynb)     
+[EDA notebook](clustering/2_data_wrangling_3_eda.ipynb)     
 
 <p align="center">Customers' education and marital status before cleaning (bar graph on left) and after cleaning (pie chart on right) category labels</p>
 
@@ -87,14 +87,15 @@ In a collaborative-filtering system there are only three columns that matter to 
 <p align="center"><img src="./additional_files/images/download_17.png" width='500'>     
             
 # 4. Preprocessing and training      
-[Preprocessing notebook](4_preprocess_train_5_modeling.ipynb)     
+[Preprocessing notebook](clustering/4_preprocess_train_5_modeling.ipynb)     
      
 I created a basic pipeline that will impute any missing values and scale the data.  This pipeline can then be used to train various models with the data it has prepared.  I tried various models, first with default hyperparameters, and then fine-tuned hyperparameters for each algorithm.  I evaluated each model using silhouette score to compare the performance of each.
       
 # 5. Algorithms & Machine Learning     
-[Modeling notebook](4_preprocess_train_5_modeling.ipynb)     
+[Modeling notebook](clustering/4_preprocess_train_5_modeling.ipynb)     
 
-# 6. Conclusions
+# 6. Conclusions and recommendations
+[Presentation](clustering/6_presentation.pdf)
 
 # 7. Recommendations
 
