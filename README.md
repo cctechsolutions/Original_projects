@@ -12,7 +12,9 @@ A selection of my original data science and analytics projects
        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    Business analysis, predictive modeling, and random forest regression
 
 ## Data wrangling
-
+[Business data example](./revenue_analysis/02_data_wrangling.ipynb)
+[Educational data example](./literacy_project/02_data_wrangling.ipynb)
+[Customer data example](./capstone/clustering/02_data_wrangling.ipynb)
 
 ## Exploratory data analysis
 
