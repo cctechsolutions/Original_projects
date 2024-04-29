@@ -20,6 +20,12 @@ A selection of my original data science and analytics projects
      
 ## Exploratory data analysis
 
+[Business and revenue insights](./revenue_analysis/02_data_wrangling.ipynb)    
+     
+[Educational and book ban analysis](./literacy_project/pt_2-cleaning_and_pt_3-eda.ipynb)   
+     
+[Customer and purchasing insights](./capstone/clustering/2_data_wrangling_3_eda.ipynb)
+
 ## Supervised machine learning 
 
 ### Regression
