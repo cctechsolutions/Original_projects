@@ -34,4 +34,4 @@ A selection of my original data science and analytics projects
 
 ## Unsupervised machine learning
     
-[KMeans Clustering](./capstone/clustering/4_preprocess_train_5_modeling (1).ipynb)
+[KMeans Clustering](./capstone/clustering/4_preprocess_train_5_modeling.ipynb)
