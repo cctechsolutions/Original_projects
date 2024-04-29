@@ -11,11 +11,13 @@ A selection of my original data science and analytics projects
 [Revenue optimization:](./revenue_analysis)    
        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    Business analysis, predictive modeling, and random forest regression
 
-## Data wrangling
-[Business data example](./revenue_analysis/02_data_wrangling.ipynb)
-[Educational data example](./literacy_project/02_data_wrangling.ipynb)
-[Customer data example](./capstone/clustering/02_data_wrangling.ipynb)
-
+## Data wrangling examples
+[Business data](./revenue_analysis/02_data_wrangling.ipynb)    
+     
+[Educational datasets](./literacy_project/02_data_wrangling.ipynb)   
+     
+[Customer data](./capstone/clustering/02_data_wrangling.ipynb)
+     
 ## Exploratory data analysis
 
 ## Supervised machine learning 
