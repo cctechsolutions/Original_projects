@@ -6,7 +6,10 @@ A selection of my original data science and analytics projects
        
 [Literacy and Book bans:  Logistic regression classification](./full_literacy_project)
 
+[Revenue optimization:  Business analysis, predictive modeling, and random forest](./revenue_analysis)
+
 ## Data wrangling
+
 
 ## Exploratory data analysis
 
