@@ -30,7 +30,11 @@ A selection of my original data science and analytics projects
 
 ### Regression
 
+[Comparison of regression and classification models](./literacy_project/pt_5-modeling.ipynb)
+
 ### Classification
+
+[Comparison of regression and classification models](./literacy_project/pt_5-modeling.ipynb)
 
 ## Unsupervised machine learning
     
