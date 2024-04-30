@@ -28,13 +28,13 @@ A selection of my original data science and analytics projects
 
 ## Supervised machine learning 
 
-### Regression
+#### Regression
 
 [Predictive modeling for business](./revenue_analysis/05_modeling.ipynb)
      
 [Comparison of regression and classification models](./literacy_project/pt_5-modeling.ipynb)
 
-### Classification
+#### Classification
 
 [Comparison of regression and classification models](./literacy_project/pt_5-modeling.ipynb)
 
