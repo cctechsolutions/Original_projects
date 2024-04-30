@@ -1,5 +1,5 @@
 # Original_projects
-A selection of my original data science and analytics projects
+A selection of data science and analytics projects
 
 ## Complete data science projects 
 [Customer segmentation:](./capstone)     
