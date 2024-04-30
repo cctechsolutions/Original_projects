@@ -11,14 +11,14 @@ A selection of data science and analytics projects
 [Revenue optimization:](./revenue_analysis)    
        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    Business analysis, predictive modeling, and random forest regression
 
-## Data wrangling examples
+### Data wrangling examples:
 [Business data](./revenue_analysis/02_data_wrangling.ipynb)    
      
 [Educational datasets](./literacy_project/pt_2-cleaning_and_pt_3-eda.ipynb)   
      
 [Customer data](./capstone/clustering/2_data_wrangling_3_eda.ipynb)
      
-## Exploratory data analysis
+### Exploratory data analysis:
 
 [Business and revenue insights](./revenue_analysis/02_data_wrangling.ipynb)    
      
@@ -26,7 +26,7 @@ A selection of data science and analytics projects
      
 [Customers' purchasing trends](./capstone/clustering/2_data_wrangling_3_eda.ipynb)
 
-## Supervised machine learning 
+### Supervised machine learning 
 
 #### Regression:
 [Predictive modeling for business](./revenue_analysis/05_modeling.ipynb)
@@ -36,6 +36,6 @@ A selection of data science and analytics projects
 #### Classification:
 [Comparison of regression and classification models](./literacy_project/pt_5-modeling.ipynb)
 
-## Unsupervised machine learning
+### Unsupervised machine learning:
     
 [KMeans Clustering](./capstone/clustering/4_preprocess_train_5_modeling.ipynb)
