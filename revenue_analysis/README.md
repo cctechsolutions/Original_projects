@@ -1,7 +1,7 @@
 # Big Mountain Ski Resort
 ## Random forest modeling to maximize business profits
 
-![image]((https://github.com/cctechsolutions/Original_projects/blob/main/revenue_analysis/additional_files/images/1bhmh2MHxcSbMdDqYW7C1jtGN7C8F-eaZ68cTuIR-i1Yhl-R2bA.png))
+![image](https://github.com/cctechsolutions/Original_projects/blob/main/revenue_analysis/additional_files/images/1bhmh2MHxcSbMdDqYW7C1jtGN7C8F-eaZ68cTuIR-i1Yhl-R2bA.png)
 
 <images src="./additional_files/images/1bhmh2MHxcSbMdDqYW7C1jtGN7C8F-eaZ68cTuIR-i1Yhl-R2bA.png">
 
