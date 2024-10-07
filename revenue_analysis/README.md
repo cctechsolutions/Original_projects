@@ -25,7 +25,7 @@
 The algorithm that performed best for determining what ticket price is best for the resort was a random forest regression model.  One of the reasons for choosing this model is that the random forest regression had a smaller mean absolute error than using the mean or the linear regression model.  The random forest model also provided more detailed business insights, such as which features of the resort had the largest impact on business outcomes.
 
 ### 1. Background
-[Problem identification](revenue_analysis/01_problem_identification)
+[Problem identification](./01_problem_identification)
 
 #### About the data:
 The dataset used for this project is for practice purposes and is at least partly fictional data.  The data provided in Springboard curriculum was contained in a single CSV file that contained information about 330 resorts. 
