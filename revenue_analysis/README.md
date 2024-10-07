@@ -38,7 +38,7 @@ The dataset used for this project is for practice purposes and is at least partl
 * Name: name of the resort   
 * Region: the region that contains the resort (divided primarily the same as state divisions, though with some exceptions)   
 * state: the state in which the resort resides
-#### *Ski resort features*
+#### *Resort features*
 * summit_elev: elevation above sea level at the summit of ski slopes (in feet)
 * vertical_drop: difference in elevation over the distance of ski slope (in feet)
 * base_elev: elevation above sea level at the base of ski slopes (in feet)
