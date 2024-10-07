@@ -34,11 +34,11 @@ Using data from the resort and its competitors, we can identify opportunities fo
 ## About the data:
 The dataset used for this project is for practice purposes and is at least partly fictional data.  The data provided in Springboard curriculum was contained in a single CSV file that contained information about 330 resorts.  For each resort, the dataset contains information on the following variable:
 
-#### Resort information
+#### *Resort information*
 * Name: name of the resort   
 * Region: the region that contains the resort (divided primarily the same as state divisions, though with some exceptions)   
 * state: the state in which the resort resides
-#### Ski resort features
+#### *Ski resort features*
 * summit_elev: elevation above sea level at the summit of ski slopes (in feet)
 * vertical_drop: difference in elevation over the distance of ski slope (in feet)
 * base_elev: elevation above sea level at the base of ski slopes (in feet)
@@ -54,7 +54,7 @@ The dataset used for this project is for practice purposes and is at least partl
 * Runs: number of total ski runs
 * TerrainParks: 
 * LongestRun_mi: length of the longest ski run (in miles)
-#### Resort logistics
+#### *Resort logistics*
 * daysOpenLastYear: number of days open the previous year
 * yearsOpen: number of years the resort has been open total
 * averageSnowfall: average amount of snowfall in inches
@@ -62,7 +62,7 @@ The dataset used for this project is for practice purposes and is at least partl
 * SnowMaking_ac: number of acres available for making snow
 * projectedDaysOpen: the anticipated number of days a resort is likely to be open during the following year
 * NightSkiing_ac: number of acres available for skiing after dark
-#### Ticket price information
+#### *Ticket price information*
 * AdultWeekday: price for an adult for one weekday
 * AdultWeekend: price for one adult for one weekend day
      
