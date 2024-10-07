@@ -43,16 +43,16 @@ The dataset used for this project is for practice purposes and is at least partl
 * vertical_drop: difference in elevation over the distance of ski slope (in feet)
 * base_elev: elevation above sea level at the base of ski slopes (in feet)
 * trams: number of trams for transporting visitors
-* fastEight:
-* fastSix:
-* fastQuads:
-* quad:
-* triple:
-* double:
-* surface:
+* fastEight: number of eight person detachable chairlifts
+* fastSix: number of six-person detachable chairlifts
+* fastQuads: number of four-person detachable chairlifts
+* quad: number of four-person chairlifts
+* triple: number of three-person chairlifts
+* double: number of two-person chairlifts
+* surface: number of surface lifts
 * total_chairs: number of chairs in chair lift(s)
 * Runs: number of total ski runs
-* TerrainParks: 
+* TerrainParks: number of terrain or snow parks
 * LongestRun_mi: length of the longest ski run (in miles)
 #### *Resort logistics*
 * daysOpenLastYear: number of days open the previous year
@@ -68,6 +68,14 @@ The dataset used for this project is for practice purposes and is at least partl
      
 # 2. Data wrangling
 [Data wrangling notebook](./02_data_wrangling.ipynb)
+
+Before moving forward, the data must be examined and cleaned.  Correcting and fixing inaccurate and inconsistent data will ensure that analysis and modeling are as reliable and useful as possible.
+
+* **Problem 1:** Missing values:  24 of the 2240 rows contained a missing value for the column income.  Before changing or removing these observations, I wanted to be sure that there are not any trends among these values that might affect our analysis.  I compared the rows that had a missing value with the averages of all other rows for each variable.  There was not a significant difference between other rows and those with missing values.  **Solution:** I imputed the missing income values with the mean value for income across the dataset.
+
+* **Problem 2:** Some values given for categorical variables were in a different format than others.  Some appeared to be added as a joke, such as the values "Absurd" and "YOLO" in the column for relationship status.  **Solution:** For the education variable, I looked for information to learn which of the unknown labels were most equivalent to the education system in the US, as that is what I am most familiar with.  I then replaced the terms, "Basic," "2n cycle," with "High School" and "Master's" so that the format was the same across all observations.  I dropped the rows with "Absurd" and "YOLO" for relationship status as I had no way to determine what the true response should have been, nor was there any average value for that feature that I might use to impute them.
+
+* **Problem 3:** There were more features than we would use for our analysis.  Machine learning algorithms can manage extremely large datasets with many dimensions, but each dimension adds complexity and can increas
 
 # 3. Exploratory analysis
 [Exploratory data analysis notebook](./03_exploratory_data_analysis.ipynb)
