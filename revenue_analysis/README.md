@@ -23,23 +23,22 @@
 ***Final model:   Random Forest Regression***
      
 The algorithm that performed best for determining what ticket price is best for the resort was a random forest regression model.  One of the reasons for choosing this model is that the random forest regression had a smaller mean absolute error than using the mean or the linear regression model.  The random forest model also provided more detailed business insights, such as which features of the resort had the largest impact on business outcomes.
-
+      
 # 1. Background
 [Problem identification](./01_problem_identification.pdf)
 
 Big Mountain Resort offers access to 105 trails and spectacular views of Glacier National Park and Flathead National Forest and hosts about 350,000 visitors each year. The resort has remarkable facilities, including a newly installed additional chair lift.  
 
 Using data from the resort and its competitors, we can identify opportunities for the resort to make the most of its current facilities, set the best possible ticket prices, ensure that new investments pay off, and plan for the most profitable future.
-
+      
 ## About the data:
 The dataset used for this project is for practice purposes and is at least partly fictional data.  The data provided in Springboard curriculum was contained in a single CSV file that contained information about 330 resorts.  For each resort, the dataset contains information on the following variable:
 
-### Resort information
+#### Resort information
 * Name: name of the resort   
 * Region: the region that contains the resort (divided primarily the same as state divisions, though with some exceptions)   
 * state: the state in which the resort resides
-
-### Ski resort features
+#### Ski resort features
 * summit_elev: elevation above sea level at the summit of ski slopes (in feet)
 * vertical_drop: difference in elevation over the distance of ski slope (in feet)
 * base_elev: elevation above sea level at the base of ski slopes (in feet)
@@ -55,8 +54,7 @@ The dataset used for this project is for practice purposes and is at least partl
 * Runs: number of total ski runs
 * TerrainParks: 
 * LongestRun_mi: length of the longest ski run (in miles)
-
-### Resort logistics
+#### Resort logistics
 * daysOpenLastYear: number of days open the previous year
 * yearsOpen: number of years the resort has been open total
 * averageSnowfall: average amount of snowfall in inches
@@ -64,11 +62,10 @@ The dataset used for this project is for practice purposes and is at least partl
 * SnowMaking_ac: number of acres available for making snow
 * projectedDaysOpen: the anticipated number of days a resort is likely to be open during the following year
 * NightSkiing_ac: number of acres available for skiing after dark
-
-### Ticket price information
+#### Ticket price information
 * AdultWeekday: price for an adult for one weekday
 * AdultWeekend: price for one adult for one weekend day
-
+     
 # 2. Data wrangling
 [Data wrangling notebook](./02_data_wrangling.ipynb)
 
