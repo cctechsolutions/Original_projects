@@ -31,13 +31,43 @@ Big Mountain Resort offers access to 105 trails and spectacular views of Glacier
 
 Using data from the resort and its competitors, we can identify opportunities for the resort to make the most of its current facilities, set the best possible ticket prices, ensure that new investments pay off, and plan for the most profitable future.
 
-### About the data:
-The dataset used for this project is for practice purposes and is at least partly fictional data.  The data provided in Springboard curriculum was contained in a single CSV file that contained information about 330 resorts. 
+## About the data:
+The dataset used for this project is for practice purposes and is at least partly fictional data.  The data provided in Springboard curriculum was contained in a single CSV file that contained information about 330 resorts.  For each resort, the dataset contains information on the following variable:
 
-#### Demographics
-* ID: Customer's unique identifier    
-* Year_Birth: Customer's birth year    
-* Education: Customer's education level   
+### Resort information
+* Name: name of the resort   
+* Region: the region that contains the resort (divided primarily the same as state divisions, though with some exceptions)   
+* state: the state in which the resort resides
+
+### Ski resort features
+* summit_elev: elevation above sea level at the summit of ski slopes (in feet)
+* vertical_drop: difference in elevation over the distance of ski slope (in feet)
+* base_elev: elevation above sea level at the base of ski slopes (in feet)
+* trams: number of trams for transporting visitors
+* fastEight:
+* fastSix:
+* fastQuads:
+* quad:
+* triple:
+* double:
+* surface:
+* total_chairs: number of chairs in chair lift(s)
+* Runs: number of total ski runs
+* TerrainParks: 
+* LongestRun_mi: length of the longest ski run (in miles)
+
+### Resort logistics
+* daysOpenLastYear: number of days open the previous year
+* yearsOpen: number of years the resort has been open total
+* averageSnowfall: average amount of snowfall in inches
+* SkiableTerrain_ac: number of acres available for skiing
+* SnowMaking_ac: number of acres available for making snow
+* projectedDaysOpen: the anticipated number of days a resort is likely to be open during the following year
+* NightSkiing_ac: number of acres available for skiing after dark
+
+### Ticket price information
+* AdultWeekday: price for an adult for one weekday
+* AdultWeekend: price for one adult for one weekend day
 
 # 2. Data wrangling
 [Data wrangling notebook](./02_data_wrangling.ipynb)
