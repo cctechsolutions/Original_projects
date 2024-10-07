@@ -24,25 +24,34 @@
      
 The algorithm that performed best for determining what ticket price is best for the resort was a random forest regression model.  One of the reasons for choosing this model is that the random forest regression had a smaller mean absolute error than using the mean or the linear regression model.  The random forest model also provided more detailed business insights, such as which features of the resort had the largest impact on business outcomes.
 
-### 1. Background
+# 1. Background
 [Problem identification](./01_problem_identification.pdf)
 
-#### About the data:
+Big Mountain Resort offers access to 105 trails and spectacular views of Glacier National Park and Flathead National Forest and hosts about 350,000 visitors each year. The resort has remarkable facilities, including a newly installed additional chair lift.  
+
+Using data from the resort and its competitors, we can identify opportunities for the resort to make the most of its current facilities, set the best possible ticket prices, ensure that new investments pay off, and plan for the most profitable future.
+
+### About the data:
 The dataset used for this project is for practice purposes and is at least partly fictional data.  The data provided in Springboard curriculum was contained in a single CSV file that contained information about 330 resorts. 
 
-### 2. Data wrangling
+#### Demographics
+* ID: Customer's unique identifier    
+* Year_Birth: Customer's birth year    
+* Education: Customer's education level   
+
+# 2. Data wrangling
 [Data wrangling notebook](./02_data_wrangling.ipynb)
 
-### 3. Exploratory analysis
+# 3. Exploratory analysis
 [Exploratory data analysis notebook](./03_exploratory_data_analysis.ipynb)
 
-### 4. Preprocessing and training models
+# 4. Preprocessing and training models
 [Preprocessing notebook](./04_preprocessing_and_training.ipynb)
 
-### 5. Predictive modeling
+# 5. Predictive modeling
 [Modeling notebook](./05_modeling.ipynb)
 
-### 6. Conclusions and recommendations
+# 6. Conclusions and recommendations
 [Presentation for business leaders](./06_presentation.ipynb)     
 
 [Project Report](./07_project_report.ipynb)
