@@ -34,15 +34,15 @@ The dataset used for this project is for practice purposes and is at least partl
 [Data wrangling notebook](./02_data_wrangling.ipynb)
 
 ### 3. Exploratory analysis
-[Exploratory data analysis notebook](revenue_analysis/03_exploratory_data_analysis.ipynb)
+[Exploratory data analysis notebook](./03_exploratory_data_analysis.ipynb)
 
 ### 4. Preprocessing and training models
-[Preprocessing notebook](revenue_analysis/04_preprocessing_and_training.ipynb)
+[Preprocessing notebook](./04_preprocessing_and_training.ipynb)
 
 ### 5. Predictive modeling
-[Modeling notebook](revenue_analysis/05_modeling.ipynb)
+[Modeling notebook](./05_modeling.ipynb)
 
 ### 6. Conclusions and recommendations
-[Presentation for business leaders](revenue_analysis/06_presentation.ipynb)     
+[Presentation for business leaders](./06_presentation.ipynb)     
 
-[Project Report](revenue_analysis/07_project_report.ipynb)
+[Project Report](./07_project_report.ipynb)
