@@ -1,9 +1,9 @@
 # Big Mountain Ski Resort
-## Random forest modeling to maximize business profits
+## Using random forest modeling to maximize business profits
 
 ![image](https://github.com/cctechsolutions/Original_projects/blob/main/revenue_analysis/additional_files/images/1bhmh2MHxcSbMdDqYW7C1jtGN7C8F-eaZ68cTuIR-i1Yhl-R2bA.png)
 
-*Companies who understand their customers and their behavior have an advantage over their competitors.  These understandings help companies know what messages will resonate with them and how to attract and retain these customers.  Insights into customers and purchase behavior can also help companies know how to attract certain types of customers and increase certain types of purchase behavior.  As of 2022, e-commerce accounts for nearly 19% of all purchases, and this is expected to continue increasing over the next few years.[^1]  Our client, a grocery store chain, wants to use these types of insights to increase online purchases from their customers.*
+*Random forest regression is a powerful machine-learning algorithm that analyzes complex datasets and accurately predicts continuous values.  This predictive model can provide invaluable insights to guide businesses in decision making.  In this project, various predictive models are created and compared to guide a fictitious ski resort in setting their ideal ticket price to maximize profits.*
 
 # Method
 
