@@ -32,7 +32,7 @@ Big Mountain Resort offers access to 105 trails and spectacular views of Glacier
 Using data from the resort and its competitors, we can identify opportunities for the resort to make the most of its current facilities, set the best possible ticket prices, ensure that new investments pay off, and plan for the most profitable future.
       
 ## About the data:
-The dataset used for this project is for practice purposes and is at least partly fictional data.  The data provided in Springboard curriculum was contained in a single CSV file that contained information about 330 resorts.  For each resort, the dataset contains information on the following variable:
+The dataset used for this project is for practice purposes and contains partly fictional data.  Provided by Springboard curriculum, this information was contained in a single CSV file with about 330 observations.  For each resort, the dataset contains data about the following variables:
 
 #### *Resort information*
 * Name: name of the resort   
@@ -43,7 +43,7 @@ The dataset used for this project is for practice purposes and is at least partl
 * vertical_drop: difference in elevation over the distance of ski slope (in feet)
 * base_elev: elevation above sea level at the base of ski slopes (in feet)
 * trams: number of trams for transporting visitors
-* fastEight: number of eight person detachable chairlifts
+* fastEight: number of eight-person detachable chairlifts
 * fastSix: number of six-person detachable chairlifts
 * fastQuads: number of four-person detachable chairlifts
 * quad: number of four-person chairlifts
@@ -69,13 +69,13 @@ The dataset used for this project is for practice purposes and is at least partl
 # 2. Data wrangling
 [Data wrangling notebook](./02_data_wrangling.ipynb)
 
-Before moving forward, the data must be examined and cleaned.  Correcting and fixing inaccurate and inconsistent data will ensure that analysis and modeling are as reliable and useful as possible.
+Before analysis can begin, the raw data must be examined and cleaned.  Identifying and correcting, fixing, or removing any inaccurate and inconsistent data will ensure that analysis and modeling are as reliable and useful as possible.
 
-* **Problem 1:** Missing values:  24 of the 2240 rows contained a missing value for the column income.  Before changing or removing these observations, I wanted to be sure that there are not any trends among these values that might affect our analysis.  I compared the rows that had a missing value with the averages of all other rows for each variable.  There was not a significant difference between other rows and those with missing values.  **Solution:** I imputed the missing income values with the mean value for income across the dataset.
+* **Problem 1:** Missing values:  13 of the 27 columns contained at least one missing value.  Some of the missing values may represent zeros or categories that do not apply to certain resorts.  For example, when a resort has no fast lifts, these columns may be left blank rather than filled with a zero in each of the columns for types of fast lifts.  However, about 16% of the resorts are missing ticket pricing information.  As one of the ways we might help our resort estimate an ideal ticket price is to compare to prices at similar resorts, this information is very important.  We can logically assume that these missing values would not imply that the ticket price of each resort would be $0.  **Solution:** Rather than make assumptions about the missing prices, which could drastically affect our later recommendations, I dropped rows that contained no information about ticket price.  However, resorts that gave one ticket price, either in the weekend or weekday price category, were retained and could be used for insights and comparisons.
 
 * **Problem 2:** Some values given for categorical variables were in a different format than others.  Some appeared to be added as a joke, such as the values "Absurd" and "YOLO" in the column for relationship status.  **Solution:** For the education variable, I looked for information to learn which of the unknown labels were most equivalent to the education system in the US, as that is what I am most familiar with.  I then replaced the terms, "Basic," "2n cycle," with "High School" and "Master's" so that the format was the same across all observations.  I dropped the rows with "Absurd" and "YOLO" for relationship status as I had no way to determine what the true response should have been, nor was there any average value for that feature that I might use to impute them.
 
-* **Problem 3:** There were more features than we would use for our analysis.  Machine learning algorithms can manage extremely large datasets with many dimensions, but each dimension adds complexity and can increas
+* **Problem 3:** There were more features than we would use for our analysis.  Machine learning algorithms can manage extremely large datasets with many dimensions, but each dimension adds complexity and can increase the time required to train and test models. Solution: While I did drop unnecessary columns such as customer ID number, I wanted to maintain as many features as possible that might prove useful. Therefore, I combined features such as "Kidhome" and "Teenhome" into a single feature for customers with a child or children at home.
 
 # 3. Exploratory analysis
 [Exploratory data analysis notebook](./03_exploratory_data_analysis.ipynb)
