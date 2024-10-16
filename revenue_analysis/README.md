@@ -88,7 +88,7 @@ Before analysis can begin, the raw data must be examined and cleaned.  Identifyi
          
 <p align="center">Visualizing the correlation between each variable</p>     
 
-<p align="center"><img src="./additional_files/images/1uTyO2I3zaUMr3f_w9F5ybFTkkFtGzVkrofH0POnNSQ-qnLVl1g.png" width='1200'>
+<p align="center"><img src="./additional_files/images/1uTyO2I3zaUMr3f_w9F5ybFTkkFtGzVkrofH0POnNSQ-qnLVl1g.png" width='900'>
 
 
              
