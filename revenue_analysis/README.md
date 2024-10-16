@@ -86,9 +86,16 @@ Before analysis can begin, the raw data must be examined and cleaned.  Identifyi
 
 
          
+<p align="center">Visualizing the correlation between each variable</p>     
+
+<p align="center"><img src="./additional_files/images/1uTyO2I3zaUMr3f_w9F5ybFTkkFtGzVkrofH0POnNSQ-qnLVl1g.png" width='1200'>
+
+
+             
 <p align="center">Visualizing the correlation between ticket price and each ski resort feature</p>     
 
 <p align="center"><img src="./additional_files/images/1BNhMM4BlrtqGJgRU6_lNZjM_NV5Q1lJ8GgWvsRXTlwNwRIUAnQ.png" width='1200'>
+
 
 # 4. Preprocessing and training models
 [Preprocessing notebook](./04_preprocessing_and_training.ipynb)
