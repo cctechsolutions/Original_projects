@@ -3,8 +3,6 @@
 
 <p align="center"><img src="./additional_files/images/1bhmh2MHxcSbMdDqYW7C1jtGN7C8F-eaZ68cTuIR-i1Yhl-R2bA.png" width='700'></p>
 
-![image](https://github.com/cctechsolutions/Original_projects/blob/main/revenue_analysis/additional_files/images/1bhmh2MHxcSbMdDqYW7C1jtGN7C8F-eaZ68cTuIR-i1Yhl-R2bA.png)
-
 *Random forest regression is a powerful machine-learning algorithm that analyzes complex datasets and accurately predicts continuous values.  This predictive model can provide invaluable insights to guide businesses in decision-making.  In this project, various predictive models are created and compared to guide a fictitious ski resort in setting the ideal ticket price to maximize profits.*
 
 # Method
