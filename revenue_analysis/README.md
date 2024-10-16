@@ -80,7 +80,7 @@ Before analysis can begin, the raw data must be examined and cleaned.  Identifyi
 
 <p align="center">Visualizing resort features at all ski resorts compared with Big Mountain resort (shown by red dashed line)</p>
 
-<img src="./additional_files/images/14K7AuO9N31jRG0-IP48_itxvxV2ZMvU2-DoHOIUTpJNObaIfFw.png" width='550'>   
+<img src="./additional_files/images/14K7AuO9N31jRG0-IP48_itxvxV2ZMvU2-DoHOIUTpJNObaIfFw.png" width='450'>  <img src="./additional_files/images/18cGLwcRHGBDPqxVGA_iLRZKvqIiowHHT9m7rMvKsJpvVEvEeyg.png " width='450'> 
 
 <p align="center">Visualizing the correlation between each combination of variables in the cleaned dataset</p>     
 
