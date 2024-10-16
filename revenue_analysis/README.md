@@ -78,22 +78,19 @@ Before analysis can begin, the raw data must be examined and cleaned.  Identifyi
 # 3. Exploratory analysis
 [Exploratory data analysis notebook](./03_exploratory_data_analysis.ipynb)
 
-<p align="center">Visualizing the frequency of resort features from all ski resorts compared with Big Mountain resort (shown by red dashed line)</p>
-
+<p align="center">Comparing the frequency of resort features from other resorts with those of Big Mountain ski resort (shown by red dashed line)</p>
 <img src="./additional_files/images/14K7AuO9N31jRG0-IP48_itxvxV2ZMvU2-DoHOIUTpJNObaIfFw.png" width='480'>  <img src="./additional_files/images/18cGLwcRHGBDPqxVGA_iLRZKvqIiowHHT9m7rMvKsJpvVEvEeyg.png " width='480'> 
       
 <img src="./additional_files/images/1IW20LoNImkUgyDYeKJCWwfyN30gVZioFXkbQawyx48Tpb3eB7Q.png" width='480'>  <img src="./additional_files/images/1XnB9UoYYAIywMvPnLSFRsAZ9t1etLZ6zx9_hTSa6-PecWXkYSA.png" width='480'>
 
 
          
-<p align="center">Visualizing the correlation between each variable</p>     
-
+<p align="center">Visualizing any correlation between variables</p>
 <p align="center"><img src="./additional_files/images/1uTyO2I3zaUMr3f_w9F5ybFTkkFtGzVkrofH0POnNSQ-qnLVl1g.png" width='800'>
 
 
              
-<p align="center">Visualizing the correlation between ticket price and each ski resort feature</p>     
-
+<p align="center">Examining the correlation between ticket price and each ski resort feature</p>     
 <p align="center"><img src="./additional_files/images/1BNhMM4BlrtqGJgRU6_lNZjM_NV5Q1lJ8GgWvsRXTlwNwRIUAnQ.png" width='1100'>
 
 
