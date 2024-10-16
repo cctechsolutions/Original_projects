@@ -78,7 +78,7 @@ Before analysis can begin, the raw data must be examined and cleaned.  Identifyi
 # 3. Exploratory analysis
 [Exploratory data analysis notebook](./03_exploratory_data_analysis.ipynb)
 
-<p align="center">Visualizing the distribution of individual features from all ski resorts compared with our resort (shown by red dashed line)</p>
+<p align="center">Visualizing important resort features at all ski resorts compared with Big Mountain resort (shown by red dashed line)</p>
 
 <img src="./additional_files/images/14K7AuO9N31jRG0-IP48_itxvxV2ZMvU2-DoHOIUTpJNObaIfFw.png" width='550'>   
 
