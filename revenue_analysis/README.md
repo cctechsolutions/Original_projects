@@ -80,7 +80,7 @@ Before analysis can begin, the raw data must be examined and cleaned.  Identifyi
 
 <p align="center">Visualizing the frequency of resort features from all ski resorts compared with Big Mountain resort (shown by red dashed line)</p>
 
-<img src="./additional_files/images/14K7AuO9N31jRG0-IP48_itxvxV2ZMvU2-DoHOIUTpJNObaIfFw.png" width='450'>  <img src="./additional_files/images/18cGLwcRHGBDPqxVGA_iLRZKvqIiowHHT9m7rMvKsJpvVEvEeyg.png " width='450'> 
+<img src="./additional_files/images/14K7AuO9N31jRG0-IP48_itxvxV2ZMvU2-DoHOIUTpJNObaIfFw.png" width='500'>  <img src="./additional_files/images/18cGLwcRHGBDPqxVGA_iLRZKvqIiowHHT9m7rMvKsJpvVEvEeyg.png " width='500'> 
       
 <img src="./additional_files/images/1IW20LoNImkUgyDYeKJCWwfyN30gVZioFXkbQawyx48Tpb3eB7Q.png" width='450'>  <img src="./additional_files/images/1XnB9UoYYAIywMvPnLSFRsAZ9t1etLZ6zx9_hTSa6-PecWXkYSA.png" width='450'>
 
