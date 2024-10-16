@@ -78,7 +78,13 @@ Before analysis can begin, the raw data must be examined and cleaned.  Identifyi
 # 3. Exploratory analysis
 [Exploratory data analysis notebook](./03_exploratory_data_analysis.ipynb)
 
+<p align="center">Customers' education and marital status before cleaning (bar graph on left) and after cleaning (pie chart on right) category labels</p>
 
+<img src="./additional_files/images/14K7AuO9N31jRG0-IP48_itxvxV2ZMvU2-DoHOIUTpJNObaIfFw.png" width='550'>   
+
+<p align="center">Visualizing the correlation between each combination of variables in the cleaned dataset</p>     
+
+<p align="center"><img src="./additional_files/images/download_17.png" width='500'>
 
 # 4. Preprocessing and training models
 [Preprocessing notebook](./04_preprocessing_and_training.ipynb)
